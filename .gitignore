@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (raw data not committed — too large / confidential)
+data/raw/*.xlsx
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.xlsx
+
+# Keep README and sample files
+!data/raw/README_data_sources.md
+
+# API Keys
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
