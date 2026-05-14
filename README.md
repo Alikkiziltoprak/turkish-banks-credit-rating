@@ -122,5 +122,21 @@ This project was developed by **Ali Kızıltoprak**, holder of:
 
 ---
 
+## Dashboard Preview
+
+![Composite Scores](reports/composite_scores.png)
+![Radar Chart](reports/radar_chart.png)
+
+---
+
+## Disclaimer
+
+> This project is an **educational analyst simulation** created for portfolio and learning purposes.  
+> It does not represent investment advice, an official credit rating, or the views of any rating agency.  
+> All data used is publicly available. Model-implied ratings are illustrative and not actionable.  
+> This work is not affiliated with Fitch Ratings, Moody's, S&P, or any other rating agency.
+
+---
+
 ## License
 MIT License — see [LICENSE](LICENSE)
