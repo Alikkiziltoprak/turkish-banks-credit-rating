@@ -289,6 +289,22 @@ elif page == "🌍 Sovereign Linkage":
     st.dataframe(macro_df, hide_index=True, use_container_width=True)
 
     st.markdown("---")
+    st.subheader("USDTRY and Inflation - Historical Analysis")
+    if os.path.exists('../reports/sovereign_macro.png'):
+        st.image('../reports/sovereign_macro.png', use_container_width=True)
+    st.markdown("---")
+    st.subheader("Bank Stocks vs USDTRY")
+    if os.path.exists('../reports/stocks_vs_fx.png'):
+        st.image('../reports/stocks_vs_fx.png', use_container_width=True)
+    st.markdown("---")
+    st.subheader("Rolling Correlation: Banks vs USDTRY")
+    if os.path.exists('../reports/rolling_correlation.png'):
+        st.image('../reports/rolling_correlation.png', use_container_width=True)
+    st.markdown("---")
+    st.subheader("Correlation Matrix")
+    if os.path.exists('../reports/correlation_matrix.png'):
+        st.image('../reports/correlation_matrix.png', use_container_width=True)
+    st.markdown("---")
     st.markdown("**Rating Ceiling Effect**")
     st.markdown("""
     | Standalone Profile | Sovereign Ceiling | Actual FC Rating |
