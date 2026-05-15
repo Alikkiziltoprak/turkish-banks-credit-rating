@@ -131,15 +131,15 @@ This project was developed by **Ali Kızıltoprak**, holder of:
 
 ## Dashboard Preview
 
-!\[Dashboard](reports/dashboard\_screenshot.png)
+!\[Dashboard](reports/dashboard_screenshot.png)
 
 
 
-!\[Composite Scores](reports/composite\_scores.png)
+!\[Composite Scores](reports/composite_scores.png)
 
 
 
-!\[Radar Chart](reports/radar\_chart.png)
+!\[Radar Chart](reports/radar_chart.png)
 
 \---
 
