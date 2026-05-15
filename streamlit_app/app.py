@@ -279,9 +279,9 @@ elif page == "🌍 Sovereign Linkage":
         "Indicator": ["GDP Growth (%)", "CPI Inflation (%)", "CBRT Rate (%)",
                       "USDTRY", "Current Account (% GDP)", "Turkey CDS (bps)"],
         "2023A": [5.1, 64.8, 42.5, 29.5, -4.0, 320],
-        "2024A": [4.5, 65.2, 50.0, 32.5, -3.5, 280],
-        "2025E": [3.8, 42.0, 47.5, 36.0, -3.0, 240],
-        "2026F": [4.2, 28.0, 35.0, 38.5, -2.8, 200],
+        "2024A": [4.5, 65.2, 50.0, 38.5, -3.5, 280],
+        "2025E": [3.8, 42.0, 47.5, 45.0, -3.0, 240],
+        "2026F": [4.2, 28.0, 35.0, 47.0, -2.8, 200],
         "Credit Impact": ["Positive", "Negative", "Mixed", "Negative", "Negative", "Negative"]
     }
 
