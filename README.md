@@ -131,7 +131,7 @@ This project was developed by **Ali Kızıltoprak**, holder of:
 
 ## Dashboard Preview
 
-!\[Dashboard](reports/dashboard_screenshot.png)
+![Dashboard](reports/dashboard_screenshot.png)
 
 
 
