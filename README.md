@@ -2,6 +2,8 @@
 ### An Analyst Simulation
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://turkish-banks-credit-rating.streamlit.app/)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > A quantitative credit analysis framework simulating the methodology of a sovereign-linked bank rating analyst.
