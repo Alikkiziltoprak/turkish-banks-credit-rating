@@ -6,7 +6,7 @@
 [!\[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > A quantitative credit analysis framework simulating the methodology of a sovereign-linked bank rating analyst.  
-> Built to replicate the analytical workflow of a Fitch/Moody's/S\&P credit analyst covering Turkish financial institutions.
+> Built to replicate the analytical workflow of a Fitch/Moody's/S\\\&P credit analyst covering Turkish financial institutions.
 
 \---
 
@@ -45,25 +45,25 @@ turkish-banks-credit-rating/
 │   └── processed/              # Cleaned, normalized datasets
 │
 ├── notebooks/
-│   ├── 01\_financial\_analysis.ipynb     # Phase 1: Core financial metrics
-│   ├── 02\_sovereign\_linkage.ipynb      # Phase 2: Macro risk integration
-│   ├── 03\_risk\_scoring.ipynb           # Phase 2: XGBoost + SHAP scoring
-│   └── 04\_nlp\_sentiment.ipynb         # Phase 3: NLP layer (optional)
+│   ├── 01\\\_financial\\\_analysis.ipynb     # Phase 1: Core financial metrics
+│   ├── 02\\\_sovereign\\\_linkage.ipynb      # Phase 2: Macro risk integration
+│   ├── 03\\\_risk\\\_scoring.ipynb           # Phase 2: XGBoost + SHAP scoring
+│   └── 04\\\_nlp\\\_sentiment.ipynb         # Phase 3: NLP layer (optional)
 │
 ├── src/
-│   ├── data\_loader.py          # Data ingestion from APIs
-│   ├── financial\_metrics.py    # Ratio calculations
-│   ├── risk\_scorer.py          # ML risk scoring engine
-│   ├── sovereign\_linkage.py    # Macro variable integration
-│   └── report\_generator.py    # Analyst memo generation
+│   ├── data\\\_loader.py          # Data ingestion from APIs
+│   ├── financial\\\_metrics.py    # Ratio calculations
+│   ├── risk\\\_scorer.py          # ML risk scoring engine
+│   ├── sovereign\\\_linkage.py    # Macro variable integration
+│   └── report\\\_generator.py    # Analyst memo generation
 │
 ├── reports/
-│   └── analyst\_memos/          # Rating Committee simulation outputs
-│       ├── GARAN\_memo.md
-│       ├── AKBNK\_memo.md
+│   └── analyst\\\_memos/          # Rating Committee simulation outputs
+│       ├── GARAN\\\_memo.md
+│       ├── AKBNK\\\_memo.md
 │       └── ...
 │
-├── streamlit\_app/
+├── streamlit\\\_app/
 │   └── app.py                  # Interactive dashboard
 │
 ├── requirements.txt
@@ -133,7 +133,11 @@ This project was developed by **Ali Kızıltoprak**, holder of:
 
 !\[Dashboard](reports/dashboard\_screenshot.png)
 
+
+
 !\[Composite Scores](reports/composite\_scores.png)
+
+
 
 !\[Radar Chart](reports/radar\_chart.png)
 
@@ -141,10 +145,10 @@ This project was developed by **Ali Kızıltoprak**, holder of:
 
 ## Disclaimer
 
-> This project is an \*\*educational analyst simulation\*\* created for portfolio and learning purposes.  
+> This project is an \\\*\\\*educational analyst simulation\\\*\\\* created for portfolio and learning purposes.  
 > It does not represent investment advice, an official credit rating, or the views of any rating agency.  
 > All data used is publicly available. Model-implied ratings are illustrative and not actionable.  
-> This work is not affiliated with Fitch Ratings, Moody's, S\&P, or any other rating agency.
+> This work is not affiliated with Fitch Ratings, Moody's, S\\\&P, or any other rating agency.
 
 \---
 
