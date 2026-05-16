@@ -83,6 +83,7 @@ page = st.sidebar.radio("Select View", [
     "🏦 Bank Deep Dive",
     "📈 Peer Comparison",
     "🌍 Sovereign Linkage",
+    "🎯 Risk Scoring",
     "📋 Analyst Memos"
 ])
 
@@ -223,6 +224,49 @@ elif page == "🏦 Bank Deep Dive":
     ))
     fig.update_layout(polar=dict(radialaxis=dict(range=[0, 100])), height=400)
     st.plotly_chart(fig, use_container_width=True)
+
+# ── Page: Risk Scoring ────────────────────────────────────────────────────────
+elif page == "🎯 Risk Scoring":
+    st.subheader("Phase 3 — Risk Scoring & Driver Analysis")
+
+    st.markdown("""
+    Risk scores reflect standalone credit profiles based on CAMELS-inspired methodology.
+    All FC ratings remain capped at Turkey sovereign ceiling (B, Stable).
+    """)
+
+    import pandas as pd
+    from src.data_loader import FinancialDataLoader, BANKS, FITCH_RATINGS
+    from src.financial_metrics import FinancialMetricsEngine
+
+    loader2 = FinancialDataLoader()
+    df2 = loader2.load_sample_financials()
+    engine2 = FinancialMetricsEngine(df2)
+    scores2 = engine2.calculate_pillar_scores()
+
+    results_display = scores2[["name", "composite_score"]].copy()
+    results_display.columns = ["Bank", "Risk Score"]
+    results_display["Risk Category"] = pd.cut(
+        results_display["Risk Score"],
+        bins=[0, 50, 65, 80, 100],
+        labels=["High Risk", "Moderate Risk", "Low Risk", "Very Low Risk"]
+    )
+    results_display["Fitch Rating"] = [FITCH_RATINGS[b]["LT_IDR"] for b in scores2.index]
+    st.dataframe(results_display, hide_index=True, use_container_width=True)
+
+    st.markdown("---")
+    st.subheader("Risk Driver Heatmap")
+    if os.path.exists("../reports/risk_driver_heatmap.png"):
+        st.image("../reports/risk_driver_heatmap.png", use_container_width=True)
+
+    st.markdown("---")
+    st.subheader("Per-Bank Risk Driver Analysis")
+    if os.path.exists("../reports/per_bank_risk_drivers.png"):
+        st.image("../reports/per_bank_risk_drivers.png", use_container_width=True)
+
+    st.markdown("---")
+    st.subheader("Feature Importance")
+    if os.path.exists("../reports/feature_importance.png"):
+        st.image("../reports/feature_importance.png", use_container_width=True)
 
 # ── Page: Peer Comparison ──────────────────────────────────────────────────────
 elif page == "📈 Peer Comparison":
